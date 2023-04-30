@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/crystal-store/static/css/main.cb347950.css",
+    "main.js": "/crystal-store/static/js/main.2dcaef7e.js",
+    "index.html": "/crystal-store/index.html",
+    "main.cb347950.css.map": "/crystal-store/static/css/main.cb347950.css.map",
+    "main.2dcaef7e.js.map": "/crystal-store/static/js/main.2dcaef7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb347950.css",
+    "static/js/main.2dcaef7e.js"
+  ]
+}
