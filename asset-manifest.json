@@ -1,13 +1,38 @@
 {
   "files": {
-    "main.css": "/crystal-store/static/css/main.cb347950.css",
-    "main.js": "/crystal-store/static/js/main.2dcaef7e.js",
+    "main.css": "/crystal-store/static/css/main.10bb03de.css",
+    "main.js": "/crystal-store/static/js/main.25678c77.js",
+    "static/media/rune-fertility.svg": "/crystal-store/static/media/rune-fertility.b8c8829d91a357a6c839.svg",
+    "static/media/rune-growth.svg": "/crystal-store/static/media/rune-growth.561015d8783b3650ddd3.svg",
+    "static/media/rune-protection.svg": "/crystal-store/static/media/rune-protection.4a849298af2c1680da78.svg",
+    "static/media/rune-initiation.svg": "/crystal-store/static/media/rune-initiation.fc6058ab44b6523618a7.svg",
+    "static/media/rune-harvest.svg": "/crystal-store/static/media/rune-harvest.a7bbab6275639087daf0.svg",
+    "static/media/rune-movement.svg": "/crystal-store/static/media/rune-movement.86336e61e69d43a819b3.svg",
+    "static/media/rune-constraint.svg": "/crystal-store/static/media/rune-constraint.822453ab8c6e357cb48d.svg",
+    "static/media/rune-strength.svg": "/crystal-store/static/media/rune-strength.951630eea0e9ac9ed8dd.svg",
+    "static/media/rune-warrior.svg": "/crystal-store/static/media/rune-warrior.d4f7cd10435dbdfb3618.svg",
+    "static/media/rune-disruption.svg": "/crystal-store/static/media/rune-disruption.20a71aa1c9479eff2258.svg",
+    "static/media/rune-defense.svg": "/crystal-store/static/media/rune-defense.c49109b1b70d940e3423.svg",
+    "static/media/rune-partnership.svg": "/crystal-store/static/media/rune-partnership.9c32f618a40f73dcf42f.svg",
+    "static/media/rune-joy.svg": "/crystal-store/static/media/rune-joy.2094aa6de4c91f7557c9.svg",
+    "static/media/rune-retreat.svg": "/crystal-store/static/media/rune-retreat.960ab3a58c8ab91ffb14.svg",
+    "static/media/crystal-form.svg": "/crystal-store/static/media/crystal-form.5050208d0b503556f7b9.svg",
+    "static/media/rune-journey.svg": "/crystal-store/static/media/rune-journey.b7d226cfe79a3879324c.svg",
+    "static/media/rune-breakthrough.svg": "/crystal-store/static/media/rune-breakthrough.3e8b19a0c919e4213455.svg",
+    "static/media/rune-signals.svg": "/crystal-store/static/media/rune-signals.aac12825f4334055348f.svg",
+    "static/media/rune-possessions.svg": "/crystal-store/static/media/rune-possessions.9dbb533cfb7b48f7b1db.svg",
+    "static/media/rune-opening.svg": "/crystal-store/static/media/rune-opening.6d54c2206ea42a25b05c.svg",
+    "static/media/rune-gateway.svg": "/crystal-store/static/media/rune-gateway.28f97ee5c58813813d9d.svg",
+    "static/media/rune-wholeness.svg": "/crystal-store/static/media/rune-wholeness.c9ebfbbd655ff4f80e51.svg",
     "index.html": "/crystal-store/index.html",
-    "main.cb347950.css.map": "/crystal-store/static/css/main.cb347950.css.map",
-    "main.2dcaef7e.js.map": "/crystal-store/static/js/main.2dcaef7e.js.map"
+    "static/media/rune-flow.svg": "/crystal-store/static/media/rune-flow.3bddd38be7c6bc1eeec6.svg",
+    "static/media/rune-standstill.svg": "/crystal-store/static/media/rune-standstill.01dc3dcc774ce1f48007.svg",
+    "static/media/crystal-shadow.svg": "/crystal-store/static/media/crystal-shadow.fecd84029a9be0c734f1.svg",
+    "main.10bb03de.css.map": "/crystal-store/static/css/main.10bb03de.css.map",
+    "main.25678c77.js.map": "/crystal-store/static/js/main.25678c77.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb347950.css",
-    "static/js/main.2dcaef7e.js"
+    "static/css/main.10bb03de.css",
+    "static/js/main.25678c77.js"
   ]
 }
