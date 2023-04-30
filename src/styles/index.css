@@ -53,3 +53,9 @@ a:hover {
     margin: 0 auto;
     padding: 36px 32px 64px 32px;
 }
+
+.crystal {
+    width: 200px;
+    aspect-ratio: 2/3;
+    background: url('../assets/crystal-form.svg') no-repeat center center;
+}
