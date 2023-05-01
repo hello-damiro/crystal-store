@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Crystal from '../shared/Crystal';
+import crystalData from '../../data/CrystalsData';
+import { randomNumber } from '../helpers/CommonFunctions';
 
 function Contact() {
+    const [crystals, setCrystals] = useState([]);
+
+    useEffect(() => {
+        const getRandomCrystal = () => {
+            const randomIndex = randomNumber(crystalData.length);
+            return crystalData[randomIndex];
+        };
+        const randomCrystals = [getRandomCrystal()];
+        setCrystals(randomCrystals);
+    }, []);
+
     return (
         <section className="contact">
             <div className="copy">
@@ -18,8 +31,8 @@ function Contact() {
                 </p>
                 <p>
                     Alternatively, you can also send us an email at{' '}
-                    <a href="mailto:reachus@odincrystals.com">reachus@odincrystals.com</a>. We will
-                    get back to you as soon as possible.
+                    <a href="mailto:hello-damiro@gmail.com">hello-damiro@gmail.com</a>. We will get
+                    back to you as soon as possible.
                 </p>
                 <div className="buttons">
                     <Link to="/about">
@@ -31,7 +44,16 @@ function Contact() {
                 </div>
             </div>
             <div className="illustration">
-                <Crystal color={'pink'} width={150} shadowed={true} shadowGap={32} />
+                {crystals.map((crystal) => (
+                    <Crystal
+                        key={crystal.id}
+                        color={crystal.color}
+                        meaning={crystal.meaning.toLowerCase()}
+                        width={150}
+                        shadowed={true}
+                        shadowGap={32}
+                    />
+                ))}
             </div>
         </section>
     );

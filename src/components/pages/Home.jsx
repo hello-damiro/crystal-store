@@ -1,12 +1,25 @@
-import React from 'react';
-import Crystal from '../shared/Crystal';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Crystal from '../shared/Crystal';
+import crystalData from '../../data/CrystalsData';
+import { randomNumber, randomBetween } from '../helpers/CommonFunctions';
 
 function Home() {
+    const [crystals, setCrystals] = useState([]);
+
+    useEffect(() => {
+        const getRandomCrystal = () => {
+            const randomIndex = randomNumber(crystalData.length);
+            return crystalData[randomIndex];
+        };
+        const randomCrystals = [getRandomCrystal(), getRandomCrystal(), getRandomCrystal()];
+        setCrystals(randomCrystals);
+    }, []);
+
     return (
         <section className="home">
             <div className="copy">
-                <h3>Unleash your inner power with </h3>
+                <h3>Unleash your inner power with</h3>
                 <h1>Odin's Futhark Crystals</h1>
                 <div className="writeup">
                     <p>
@@ -30,9 +43,16 @@ function Home() {
                 </div>
             </div>
             <div className="illustration">
-                <Crystal color={'red'} width={130} shadowed={true} shadowGap={32} />
-                <Crystal color={'pink'} width={150} shadowed={true} shadowGap={32} />
-                <Crystal color={'salmon'} width={110} shadowed={true} shadowGap={32} />
+                {crystals.map((crystal) => (
+                    <Crystal
+                        key={crystal.id}
+                        color={crystal.color}
+                        meaning={crystal.meaning.toLowerCase()}
+                        width={randomBetween(1, 5) * 10 + 100}
+                        shadowed={true}
+                        shadowGap={32}
+                    />
+                ))}
             </div>
         </section>
     );

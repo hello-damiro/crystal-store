@@ -1,12 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Crystal from '../shared/Crystal';
+import { randomNumber, randomBetween } from '../helpers/CommonFunctions';
+import crystalData from '../../data/CrystalsData';
 
 function About() {
+    const [crystals, setCrystals] = useState([]);
+
+    useEffect(() => {
+        const getRandomCrystal = () => {
+            const randomIndex = randomNumber(crystalData.length);
+            return crystalData[randomIndex];
+        };
+        const randomCrystals = [getRandomCrystal()];
+        setCrystals(randomCrystals);
+    }, []);
+
     return (
         <section className="about">
             <div className="illustration">
-                <Crystal color={'pink'} width={150} shadowed={true} shadowGap={32} />
+                {crystals.map((crystal) => (
+                    <Crystal
+                        key={crystal.id}
+                        color={crystal.color}
+                        meaning={crystal.meaning.toLowerCase()}
+                        width={150}
+                        shadowed={true}
+                        shadowGap={32}
+                    />
+                ))}
             </div>
             <div className="copy">
                 <h1>About</h1>

@@ -253,7 +253,7 @@ const crystalData = [
         color: '#00A693',
         pastel: '#00FFFF',
         price: 850,
-        meaning: The - 'Self',
+        meaning: 'The-Self',
         tagline: 'Connect with your inner self and others with Mannaz.',
         facts: 'Mannaz crystals are rare and can only be mined from the rivers of Midgard, the realm of humans in Norse mythology. These crystals hold pure and powerful energies of connection and communication, making them the perfect tool for those seeking to connect with their inner selves and others.',
         description: 'Teal green, symbolizing connection and community',

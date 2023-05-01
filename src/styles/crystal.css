@@ -7,14 +7,15 @@
 
 .crystal-piece {
     width: 100px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
 .crystal {
+    --futhark-w: 50%;
     width: 100px;
     position: relative;
-
     aspect-ratio: 2/3;
 }
 
@@ -29,115 +30,120 @@
 
 .crystal.possessions {
     background: url('../assets/runes/rune-possessions.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.strength {
     background: url('../assets/runes/rune-strength.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.gateway {
     background: url('../assets/runes/rune-gateway.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.signals {
     background: url('../assets/runes/rune-signals.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.journey {
     background: url('../assets/runes/rune-journey.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.opening {
     background: url('../assets/runes/rune-opening.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.partnership {
     background: url('../assets/runes/rune-partnership.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.joy {
     background: url('../assets/runes/rune-joy.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.disruption {
     background: url('../assets/runes/rune-disruption.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.constraint {
     background: url('../assets/runes/rune-constraint.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.standstill {
     background: url('../assets/runes/rune-standstill.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.harvest {
     background: url('../assets/runes/rune-harvest.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.defense {
     background: url('../assets/runes/rune-defense.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.initiation {
     background: url('../assets/runes/rune-initiation.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.protection {
     background: url('../assets/runes/rune-protection.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.wholeness {
     background: url('../assets/runes/rune-wholeness.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.warrior {
     background: url('../assets/runes/rune-warrior.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.growth {
     background: url('../assets/runes/rune-growth.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.movement {
     background: url('../assets/runes/rune-movement.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
+}
+
+.crystal.the-self {
+    background: url('../assets/runes/rune-the-self.svg') no-repeat center center;
+    background-size: var(--futhark-w);
 }
 
 .crystal.flow {
     background: url('../assets/runes/rune-flow.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.fertility {
     background: url('../assets/runes/rune-fertility.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.breakthrough {
     background: url('../assets/runes/rune-breakthrough.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }
 
 .crystal.retreat {
     background: url('../assets/runes/rune-retreat.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: var(--futhark-w);
 }

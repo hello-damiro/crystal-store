@@ -1,7 +1,9 @@
 import React from 'react';
 import Card from '../shared/Card';
+import crystalData from '../../data/CrystalsData';
 
 function Shop() {
+    const data = crystalData;
     return (
         <section className="shop">
             <h1>Odin Crystal Collections</h1>
@@ -13,14 +15,17 @@ function Shop() {
                 crystals.
             </p>
             <div className="cards">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                {data.map((crystal) => (
+                    <Card
+                        key={crystal.id}
+                        futhark={crystal.futhark}
+                        crystal={crystal.crystal}
+                        price={crystal.price}
+                        color={crystal.color}
+                        meaning={crystal.meaning.toLowerCase()}
+                        tagline={crystal.tagline}
+                    />
+                ))}
             </div>
         </section>
     );

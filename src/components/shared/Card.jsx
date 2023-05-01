@@ -2,14 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Crystal from './Crystal';
 
-function Card() {
+function Card({ futhark, crystal, color, meaning, price, tagline }) {
     return (
         <div className="card">
-            <Crystal width={100} shadowed={true} />
-            <div className="details">
-                <h3>Jera</h3>
-                <h2>Green Aventurine</h2>
-                <p>Harvest abundance and success with Jera.</p>
+            <div>
+                <Crystal meaning={meaning} color={color} width={100} shadowed={true} />
+                <div className="details">
+                    <div className="title-price">
+                        <div className="title">
+                            <h3>{futhark}</h3>
+                            <h2>{crystal}</h2>
+                        </div>
+                        <div className="price">{price}</div>
+                    </div>
+                    <p>{tagline}</p>
+                </div>
             </div>
             <div className="shop-buttons">
                 <Link to="/about">

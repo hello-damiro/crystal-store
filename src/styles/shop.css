@@ -26,6 +26,18 @@
     padding-block: 48px;
 }
 
+.card {
+    padding: 16px;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
 .card .details h2 {
     font-size: 1.4rem;
     font-weight: 700;
@@ -34,23 +46,12 @@
     padding-bottom: 16px;
 }
 .card .details h3 {
+    padding-top: 16px;
     font-size: 1.4rem;
 }
 
 .card .details p {
     text-align: left;
-}
-
-.card {
-    /* background: red; */
-    padding: 16px;
-    padding-top: 42px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    border-radius: 8px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .card .shop-buttons {
@@ -66,4 +67,88 @@
     padding-inline: 16px;
     letter-spacing: 0.1rem;
     text-align: center;
+}
+
+.crystal-detail {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px;
+    align-items: center;
+    padding-block: 16px;
+}
+
+.crystal-detail .copy {
+    padding-block: 8px;
+}
+
+.crystal-detail .copy h1 {
+    font-size: 2.8rem;
+    padding-top: 8px;
+    padding-bottom: 32px;
+}
+
+.crystal-detail .copy h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding-bottom: 8px;
+}
+
+.crystal-detail .copy h4 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-bottom: 8px;
+}
+
+.crystal-detail .copy p {
+    padding-block: 8px;
+}
+
+.crystal-detail .illustration {
+    /* background: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.crystal-detail .copy h5 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: green;
+    padding-block: 8px;
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--green);
+    padding: 8px 16px;
+    background: var(--white);
+    border-radius: 4px;
+}
+
+.price::before {
+    content: '$';
+    position: absolute;
+    font-size: 1rem;
+    margin-top: -24px;
+    width: 32px;
+    aspect-ratio: 1/1;
+    background: var(--yellow);
+    border-radius: 50%;
+    left: -16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
