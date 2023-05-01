@@ -18,6 +18,7 @@ function Shop() {
                 {data.map((crystal) => (
                     <Card
                         key={crystal.id}
+                        id={crystal.id}
                         futhark={crystal.futhark}
                         crystal={crystal.crystal}
                         price={crystal.price}

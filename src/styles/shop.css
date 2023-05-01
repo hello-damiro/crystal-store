@@ -69,57 +69,27 @@
     text-align: center;
 }
 
-.crystal-detail {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 64px;
-    align-items: center;
-    padding-block: 16px;
-}
-
-.crystal-detail .copy {
-    padding-block: 8px;
-}
-
 .crystal-detail .copy h1 {
     font-size: 2.8rem;
     padding-top: 8px;
-    padding-bottom: 32px;
+    line-height: 3rem;
 }
 
 .crystal-detail .copy h3 {
     font-size: 1.6rem;
-    line-height: 2rem;
-    padding-bottom: 8px;
 }
 
 .crystal-detail .copy h4 {
     font-size: 1.4rem;
     line-height: 2rem;
-    padding-bottom: 8px;
 }
 
-.crystal-detail .copy p {
-    padding-block: 8px;
-}
-
-.crystal-detail .illustration {
-    /* background: red; */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-}
 .crystal-detail .copy h5 {
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.1rem;
     color: green;
-    padding-block: 8px;
 }
 
 .title-price {

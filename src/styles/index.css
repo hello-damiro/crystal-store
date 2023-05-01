@@ -200,6 +200,7 @@ footer {
 }
 
 .about .illustration,
+.crystal-detail .illustration,
 .contact .illustration,
 .home .illustration {
     display: flex;

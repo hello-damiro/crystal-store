@@ -1,31 +1,40 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import Crystal from '../shared/Crystal';
+import crystalData from '../../data/CrystalsData';
 
-function Details({ futhark, crystal, color, meaning, description, facts, sell, price, tagline }) {
+function Details() {
+    const { id } = useParams();
+    const [crystal, setCrystal] = useState({});
+
+    useEffect(() => {
+        setCrystal(crystalData[id - 1]);
+    }, []);
+
     return (
         <section className="crystal-detail">
             <div className="illustration">
-                <Crystal
-                    meaning={meaning}
-                    color={color}
-                    width={150}
-                    shadowed={true}
-                    shadowGap={32}
-                />
+                {crystal.meaning && (
+                    <Crystal
+                        meaning={crystal.meaning.toLowerCase()}
+                        color={crystal.color}
+                        width={150}
+                        shadowed={true}
+                        shadowGap={32}
+                    />
+                )}
             </div>
             <div className="copy">
-                <h3>{futhark}</h3>
-                <h1>{crystal}</h1>
-                <h4>{tagline}</h4>
-                <h5>{description}</h5>
-                <p>{facts}</p>
-                <p>{sell}</p>
+                <h3>{crystal.futhark}</h3>
+                <h1>{crystal.crystal}</h1>
+                <h4>{crystal.tagline}</h4>
+                <h5>{crystal.description}</h5>
+                <p>{crystal.facts}</p>
+                <p>{crystal.sell}</p>
+
                 <div className="buttons">
+                    <button className="primary">Add to Cart</button>
                     <Link to="/shop">
-                        <button className="primary">Add to Cart</button>
-                    </Link>
-                    <Link to="/contact">
                         <button className="secondary">Go to Shop</button>
                     </Link>
                 </div>

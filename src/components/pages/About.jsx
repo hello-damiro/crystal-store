@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Crystal from '../shared/Crystal';
-import { randomNumber, randomBetween } from '../helpers/CommonFunctions';
+import { randomNumber } from '../helpers/CommonFunctions';
 import crystalData from '../../data/CrystalsData';
 
 function About() {
