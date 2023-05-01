@@ -14,7 +14,7 @@ SEE LIVE WORKING APP [HERE](http://hello-damiro.github.io/crystal-store)
 
 ## Project screenshots
 
-![Screenshot](https://github.com/hello-damiro/crystal-store/blob/main/src/assets/images/screenshot.png?raw=true)
+![Screenshot](https://github.com/hello-damiro/crystal-store/blob/main/src/assets/screenshot.png?raw=true)
 
 </br>
 

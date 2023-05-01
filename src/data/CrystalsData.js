@@ -9,7 +9,7 @@ const crystalData = [
         meaning: 'Possessions',
         tagline: 'Unleash your inner abundance with Fehu.',
         facts: 'Found in the fiery depths of Muspellheim, Fehu is a rare and highly sought-after crystal known for its purity and vibrancy. Legends say that those who possess Fehu will never go hungry, as it brings abundance and prosperity.',
-        description: 'deep red, symbolizing passion and energy',
+        description: 'Deep red, symbolizing passion and energy',
         sell: 'Unleash your inner abundance with Fehu. This fiery stone ignites your passions, fuels your creativity, and brings vitality to every aspect of your life. Fehu is a talisman of success, guiding you towards prosperity and wealth, and encouraging you to embrace your inner power to achieve all that you desire.',
     },
     {
@@ -22,7 +22,7 @@ const crystalData = [
         meaning: 'Strength',
         tagline: 'Tap into your primal power with Uruz.',
         facts: 'Mined from the rugged mountains of Jotunheim, Uruz is a powerful crystal that embodies the primal energy of the wild. Its rarity and purity are legendary, said to enhance strength, courage, and endurance.',
-        description: 'dark red, symbolizing strength and vitality',
+        description: 'Dark red, symbolizing strength and vitality',
         sell: 'Tap into your primal power with Uruz. This deep red stone awakens your inner strength and courage, helping you to overcome obstacles and face challenges with confidence. Uruz is a talisman of protection, guarding you against negativity and harm, and imbuing you with the endurance and fortitude to thrive in any situation.',
     },
     {
@@ -35,7 +35,7 @@ const crystalData = [
         meaning: 'Gateway',
         tagline: 'Protect yourself from negativity with Thurisaz.',
         facts: 'Found deep within the dense forests of Svartalfheim, Thurisaz is a crystal of protection and warding. Its purity is unmatched, and its rarity is due to the difficulty of obtaining it from the mischievous dwarves who guard it.',
-        description: 'pure white, symbolizing clarity and purification',
+        description: 'Pure white, symbolizing clarity and purification',
         sell: 'Protect yourself from negativity with Thurisaz. This powerful stone is a talisman of defense, shielding you from harmful energies and creating a safe and sacred space for you to thrive. Thurisaz also helps you to connect with your intuition and higher self, guiding you towards greater awareness and spiritual growth.',
     },
     {
@@ -48,7 +48,7 @@ const crystalData = [
         meaning: 'Signals',
         tagline: 'Unlock the power of communication with Ansuz.',
         facts: 'Mined from the depths of the cosmic well in Asgard, Ansuz is a rare and sacred crystal known for its powerful energy of communication and wisdom. Its purity is said to come from the divine essence of Odin himself.',
-        description: 'deep blue, symbolizing communication and intuition',
+        description: 'Deep blue, symbolizing communication and intuition',
         sell: 'Unlock the power of communication with Ansuz. This regal stone enhances your ability to express yourself with clarity and authenticity, helping you to connect with others on a deeper level. Ansuz is also a talisman of wisdom and inspiration, opening your mind to new perspectives and empowering you to share your unique gifts with the world.',
     },
     {
@@ -61,7 +61,7 @@ const crystalData = [
         meaning: 'Journey',
         tagline: 'Journey towards your goals with the guidance of Raido.',
         facts: 'Found in the mystical realm of Alfheim, Raido is a crystal of guidance and journeying. Its purity is enhanced by the magical energies of the elves, and its rarity is due to its ability to only be found by those with pure intentions.',
-        description: 'navy blue, symbolizing guidance and direction',
+        description: 'Navy blue, symbolizing guidance and direction',
         sell: "Journey towards your goals with the guidance of Raido. This deep blue stone helps you to align with your purpose and move towards your dreams with clarity and conviction. Raido is a talisman of guidance and protection, helping you to navigate life's twists and turns with grace and confidence.",
     },
     {
@@ -74,7 +74,7 @@ const crystalData = [
         meaning: 'Opening',
         tagline: 'Ignite your inner creativity with Kenaz.',
         facts: 'Mined from the volcanic mountains of Muspellheim, Kenaz is a rare and vibrant crystal known for its purity and intense creativity. It is said to embody the very essence of the god of fire, and its rarity is due to the dangers of obtaining it from the realm of flames.',
-        description: 'coral orange, symbolizing creativity and passion',
+        description: 'Coral orange, symbolizing creativity and passion',
         sell: 'Ignite your inner creativity with Kenaz. This fiery stone sparks your imagination and inspires you to bring your creative visions to life. Kenaz is a talisman of inspiration, helping you to overcome creative blocks and express your unique voice in the world.',
     },
     {
@@ -87,7 +87,7 @@ const crystalData = [
         meaning: 'Partnership',
         tagline: 'Experience the gift of love with Gebo.',
         facts: 'Found in the idyllic meadows of Asgard, Gebo is a crystal of love and harmony. Its purity is enhanced by the divine energy of Freyja, and its rarity is due to its ability to only be found by those who possess a pure heart.',
-        description: 'soft pink, symbolizing love and harmony',
+        description: 'Soft pink, symbolizing love and harmony',
         sell: 'Experience the gift of love with Gebo. This gentle stone opens your heart to the beauty and abundance of life, fostering deeper connections and relationships. Gebo is a talisman of love and compassion, helping you to cultivate greater empathy and understanding for yourself and others.',
     },
     {
@@ -100,7 +100,7 @@ const crystalData = [
         meaning: 'Joy',
         tagline: 'Find happiness and joy with the help of Wunjo.',
         facts: 'Mined from the glittering mines of Svartalfheim, Wunjo is a rare and joyful crystal known for its purity and ability to bring happiness and success. Its rarity is due to the mischievous nature of the dwarves who guard it.',
-        description: 'golden yellow, symbolizing joy and abundance',
+        description: 'Golden yellow, symbolizing joy and abundance',
         sell: 'Find happiness and joy with the help of Wunjo. This bright stone infuses your life with optimism and positivity, uplifting your mood and bringing a sense of joy and lightness to your day. Wunjo is a talisman of abundance and prosperity, helping you to attract wealth and success into your life.',
     },
     {
@@ -113,7 +113,7 @@ const crystalData = [
         meaning: 'Disruption',
         tagline: 'Cleanse and purify your energy with Hagalaz.',
         facts: 'Found in the frigid wastes of Niflheim, Hagalaz is a rare and potent crystal known for its purity and ability to cleanse and purify negative energies. Its rarity is due to the harsh conditions of its environment.',
-        description: 'black, symbolizing protection and grounding',
+        description: 'Black, symbolizing protection and grounding',
         sell: 'Cleanse and purify your energy with Hagalaz. This grounding stone helps you to release negativity and restore balance to your mind, body, and spirit. Hagalaz is a talisman of protection, shielding you from harmful energies and helping you to stay centered and focused in any situation.',
     },
     {
@@ -126,7 +126,7 @@ const crystalData = [
         meaning: 'Constraint',
         tagline: 'Overcome challenges and obstacles with Nauthiz.',
         facts: 'Mined from the frozen depths of Helheim, Nauthiz is a rare and powerful crystal known for its purity and ability to overcome challenges and obstacles. Its rarity is due to the treacherous journey required to obtain it from the land of the dead.',
-        description: 'dark red, symbolizing perseverance and strength',
+        description: 'Dark red, symbolizing perseverance and strength',
         sell: 'Overcome challenges and obstacles with Nauthiz. This deep red stone empowers you to face your fears and persevere through difficult times, imbuing you with the strength and resilience to overcome any challenge. Nauthiz is a talisman of endurance and fortitude, helping you to stay strong and resilient in the face of adversity.',
     },
     {
@@ -139,7 +139,7 @@ const crystalData = [
         meaning: 'Standstill',
         tagline: 'Find peace and tranquility within with Isa.',
         facts: 'Found in the tranquil glaciers of Jotunheim, Isa is a crystal of peace and tranquility. Its purity is enhanced by the serene energy of the ice giants, and its rarity is due to the remote and inaccessible location where it is found.',
-        description: 'pale blue, symbolizing calmness and tranquility',
+        description: 'Pale blue, symbolizing calmness and tranquility',
         sell: "Embrace tranquility and inner peace with Isa's calming energy. This crystal will help you to let go of stress and anxiety, promoting clarity of thought and enabling you to focus on what truly matters. With Isa by your side, you can achieve a greater sense of serenity and balance in your life.",
     },
     {
@@ -152,7 +152,7 @@ const crystalData = [
         meaning: 'Harvest',
         tagline: 'Harvest abundance and success with Jera.',
         facts: 'Jera crystals are rare and can only be found in the fertile fields of Vanaheim, a mystical realm in Norse mythology. These crystals hold the purest energies of abundance and growth, making them the perfect tool for manifesting prosperity and success.',
-        description: 'bright green, symbolizing growth and prosperity',
+        description: 'Bright green, symbolizing growth and prosperity',
         sell: "Step into abundance and success with Jera's prosperous energy. This crystal is known for its ability to attract wealth and good fortune, as well as helping you to achieve your goals. With Jera, you can tap into the natural cycles of life, harvesting abundance and success in all areas of your life.",
     },
     {
@@ -165,7 +165,7 @@ const crystalData = [
         meaning: 'Defense',
         tagline: 'Find your inner strength and resilience with Eihwaz.',
         facts: 'Eihwaz crystals are extremely rare and can only be mined from the roots of Yggdrasil, the great tree that connects the Nine Worlds in Norse mythology. These crystals are known for their powerful grounding properties and ability to help you tap into your inner strength and resilience.',
-        description: 'dark grey, symbolizing endurance and stability',
+        description: 'Dark grey, symbolizing endurance and stability',
         sell: "Discover your inner strength and resilience with Eihwaz's grounding energy. This powerful crystal is known for its ability to enhance your personal power, helping you to overcome challenges and obstacles in your life. With Eihwaz by your side, you can tap into your inner warrior and face any challenge with strength and courage.",
     },
     {
@@ -178,7 +178,7 @@ const crystalData = [
         meaning: 'Initiation',
         tagline: 'Unlock your hidden potential with Perthro.',
         facts: "Perthro crystals are pure and rare and can only be found in the hidden caves of Nidavellir, a mythical realm in Norse mythology. These crystals are imbued with the power of fate and destiny, helping you unlock your hidden potential and make the most out of life's opportunities.",
-        description: 'deep purple, symbolizing intuition and spirituality',
+        description: 'Deep purple, symbolizing intuition and spirituality',
         sell: "Unlock your hidden potential with Perthro's transformative energy. This crystal is known for its ability to enhance intuition and psychic ability, as well as promoting spiritual growth and self-discovery. With Perthro, you can tap into your inner wisdom and unlock the secrets of the universe.",
     },
     {
@@ -191,7 +191,7 @@ const crystalData = [
         meaning: 'Protection',
         tagline: 'Find protection and guidance with Algiz.',
         facts: 'Algiz crystals are rare and can only be mined from the rivers of Asgard, the realm of the gods in Norse mythology. These crystals hold pure and powerful energies of protection and guidance, making them the perfect tool for those seeking to connect with their higher selves and find inner peace.',
-        description: 'pale blue, symbolizing protection and guidance',
+        description: 'Pale blue, symbolizing protection and guidance',
         sell: "Find protection and guidance with Algiz's powerful energy. This crystal is known for its ability to ward off negative energy, providing a shield of protection around you. With Algiz, you can also tap into your intuition and inner wisdom, allowing you to make wise decisions and stay on the right path in life.",
     },
     {
@@ -204,7 +204,7 @@ const crystalData = [
         meaning: 'Wholeness',
         tagline: 'Find clarity and inspiration with Sowilo.',
         facts: 'Sowilo crystals are rare and can only be found in the sun-kissed fields of Muspelheim, a fiery realm in Norse mythology. These crystals are imbued with the purest energies of clarity and inspiration, making them the perfect tool for those seeking to achieve their goals and find happiness and success.',
-        description: 'golden yellow, symbolizing inspiration and success',
+        description: 'Golden yellow, symbolizing inspiration and success',
         sell: "Find clarity and inspiration with Sowilo's radiant energy. This crystal is known for its ability to enhance creativity and mental clarity, as well as attracting success and abundance. With Sowilo, you can tap into your inner light and harness the power of the sun, bringing warmth and inspiration into your life.",
     },
     {
@@ -217,7 +217,7 @@ const crystalData = [
         meaning: 'Warrior',
         tagline: 'Harness the power of courage and strength with Teiwaz.',
         facts: 'Teiwaz crystals are rare and can only be mined from the mountains of Svartalfheim, a mystical realm in Norse mythology. These crystals hold the purest energies of courage and strength, making them the perfect tool for those seeking to overcome obstacles and achieve their dreams.',
-        description: 'dark red, symbolizing courage and strength',
+        description: 'Dark red, symbolizing courage and strength',
         sell: "Harness the power of courage and strength with Teiwaz's fiery energy. This crystal is known for its ability to enhance physical and emotional strength, as well as promoting courage and determination. With Teiwaz by your side, you can face any challenge with confidence and fortitude.",
     },
     {
@@ -230,7 +230,7 @@ const crystalData = [
         meaning: 'Growth',
         tagline: 'Embrace growth and new beginnings with Berkana.',
         facts: 'Berkana crystals are rare and can only be found in the enchanted forests of Alfheim, a mystical realm in Norse mythology. These crystals hold pure and powerful energies of growth and new beginnings, making them the perfect tool for those seeking to embrace change and start fresh.',
-        description: 'bright green, symbolizing growth and new beginnings',
+        description: 'Bright green, symbolizing growth and new beginnings',
         sell: "Embrace growth and new beginnings with Berkana's verdant energy. This crystal is known for its ability to promote growth and renewal, as well as enhancing fertility and creativity. With Berkana, you can tap into the energy of Mother Earth, bringing new life and vitality into your world.",
     },
     {
@@ -243,7 +243,7 @@ const crystalData = [
         meaning: 'Movement',
         tagline: 'Find balance and harmony with Ehwaz.',
         facts: 'Ehwaz crystals are rare and can only be found in the magical stables of Valhalla, the great hall of the slain in Norse mythology. These crystals hold the purest energies of balance and harmony, making them the perfect tool for those seeking to find peace and stability in their lives.',
-        description: 'deep red, symbolizing balance and harmony',
+        description: 'Deep red, symbolizing balance and harmony',
         sell: "Find balance and harmony with Ehwaz's grounding energy. This crystal is known for its ability to enhance stability and balance, as well as promoting vitality and courage. With Ehwaz by your side, you can stay centered and grounded, while also tapping into your inner power and strength.",
     },
     {
@@ -256,7 +256,7 @@ const crystalData = [
         meaning: The - 'Self',
         tagline: 'Connect with your inner self and others with Mannaz.',
         facts: 'Mannaz crystals are rare and can only be mined from the rivers of Midgard, the realm of humans in Norse mythology. These crystals hold pure and powerful energies of connection and communication, making them the perfect tool for those seeking to connect with their inner selves and others.',
-        description: 'teal green, symbolizing connection and community',
+        description: 'Teal green, symbolizing connection and community',
         sell: "Connect with your inner self and others with Mannaz's harmonious energy. This crystal is known for its ability to promote harmony and balance, as well as enhancing communication and relationships. With Mannaz, you can tap into your inner wisdom and connect with others on a deeper level, promoting greater understanding and empathy.",
     },
     {
@@ -269,7 +269,7 @@ const crystalData = [
         meaning: 'Flow',
         tagline: 'Find clarity and emotional healing with Laguz.',
         facts: 'Laguz crystals are pure and rare and can only be found in the deep oceans of Niflheim, a mystical realm in Norse mythology. These crystals hold the purest energies of emotional healing and clarity, making them the perfect tool for those seeking to release negative emotions and find inner peace.',
-        description: 'pale blue-green, symbolizing emotional healing and flow',
+        description: 'Pale blue-green, symbolizing emotional healing and flow',
         sell: 'Dive into the depths of your emotions and discover inner peace with Laguz. This Aquamarine crystal will guide you towards clarity and emotional healing, helping you to let go of negative patterns and embrace a sense of calm. Let Laguz soothe your soul and lead you towards greater emotional balance and well-being.',
     },
     {
@@ -282,7 +282,7 @@ const crystalData = [
         meaning: 'Fertility',
         tagline: 'Unlock the power of abundance and prosperity with Ingwaz.',
         facts: 'Ingwaz crystals are rare and can only be found in the lush forests of Jotunheim, a mystical realm in Norse mythology. These crystals hold pure and powerful energies of abundance and prosperity, making them the perfect tool for those seeking to unlock their full potential and achieve success in all areas of life.',
-        description: 'bright green, symbolizing abundance and prosperity',
+        description: 'Bright green, symbolizing abundance and prosperity',
         sell: 'Unlock the power of abundance and prosperity with Ingwaz. This Green Aventurine crystal is a symbol of growth and opportunity, empowering you to manifest your deepest desires and achieve your goals. Harness the energy of Ingwaz and watch as new opportunities and abundance come your way.',
     },
     {
@@ -295,7 +295,7 @@ const crystalData = [
         meaning: 'Breakthrough',
         tagline: 'Let the light of Dagaz guide you to wealth and success.',
         facts: "This rare crystal is highly valued for its pure and intense energy. It is believed to be found deep within the heart of the mythical Yggdrasil tree, in the realm of Asgard. Only the most skilled and pure-hearted of warriors are said to be able to retrieve it from the tree's roots.",
-        description: 'golden yellow, symbolizing clarity and enlightenment',
+        description: 'Golden yellow, symbolizing clarity and enlightenment',
         sell: 'Let the light of Dagaz guide you to wealth and success. This Citrine crystal is a powerful symbol of illumination and clarity, helping you to tap into your inner wisdom and intuition. With the help of Dagaz, you can overcome obstacles, manifest abundance, and achieve your highest potential.',
     },
     {
@@ -308,7 +308,7 @@ const crystalData = [
         meaning: 'Retreat',
         tagline: "Tap into your inner strength with Othala's grounding energy.",
         facts: 'This pure crystal is highly sought after for its unique properties. It is said to be found within the hidden underground caves of Jotunheim, guarded by the giants who are known for their love of precious gems and metals. Only the bravest and most skilled miners can obtain it.',
-        description: 'golden brown, symbolizing grounding and stability',
+        description: 'Golden brown, symbolizing grounding and stability',
         sell: "Tap into your inner strength with Othala's grounding energy. This Tiger's Eye crystal is a powerful talisman of protection and stability, helping you to feel safe and secure as you navigate life's challenges. With the help of Othala, you can tap into your inner resilience and find the strength to overcome any obstacle.",
     },
 ];

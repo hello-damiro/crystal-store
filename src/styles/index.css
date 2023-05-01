@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&display=swap');
 @import url('reset.css');
+@import url('crystal.css');
 
 :root {
     /* SYSTEM FONTS */
@@ -15,12 +16,15 @@
     --green: #a78347;
     --green-dk: #353535;
     --blue: #111827;
+
+    --contain-w: 1080px;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+button {
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 body {
@@ -29,13 +33,17 @@ body {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 1rem;
     line-height: 1.4rem;
-    width: 100%;
-    margin: 0;
+    height: 100%;
 }
 
-a,
-a:hover {
-    text-decoration: none;
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
 }
 
 .hidden {
@@ -43,146 +51,104 @@ a:hover {
     background: red;
 }
 
-.shadow {
-    width: 100%;
-    aspect-ratio: 4/1;
-    background: url('../assets/crystal-shadow.svg') no-repeat center center;
-    background-size: 100%;
+.container {
+    max-width: var(--contain-w);
+    margin-inline: auto;
+    padding-inline: 16px;
 }
 
-.crystal-piece {
-    width: 100px;
+.ribbon {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--yellow);
+    padding-block: 4px;
+    font-size: 0.9rem;
 }
 
-.crystal {
-    width: 100px;
-    position: relative;
+.ribbon button {
+    cursor: pointer;
+    padding-inline: 12px;
+    padding-block: 4px;
+    background: var(--green);
+    color: var(--blue);
+    border-radius: 4px;
+    margin-inline: 8px;
+    font-size: 0.7rem;
+}
 
+.ribbon button:hover {
+    background: var(--white);
+}
+
+header {
+    background: var(--blue);
+    padding-block: 32px;
+}
+
+.header {
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.logo .odin {
+    width: 28px;
     aspect-ratio: 2/3;
+    margin-inline: 8px;
+    background: url('../assets/odin-logo-colored.svg') no-repeat center center;
 }
 
-.crystal::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    aspect-ratio: 2/3;
-    background: url('../assets/crystal-form.svg') no-repeat center center;
-    background-size: 100%;
+h1 em {
+    color: var(--yellow);
 }
 
-.crystal.possessions {
-    background: url('../assets/runes/rune-possessions.svg') no-repeat center center;
-    background-size: 60%;
+nav ul {
+    display: flex;
+    gap: 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
-.crystal.strength {
-    background: url('../assets/runes/rune-strength.svg') no-repeat center center;
-    background-size: 60%;
+nav button {
+    color: var(--gray);
 }
 
-.crystal.gateway {
-    background: url('../assets/runes/rune-gateway.svg') no-repeat center center;
-    background-size: 60%;
+nav button:hover {
+    color: var(--yellow);
 }
 
-.crystal.signals {
-    background: url('../assets/runes/rune-signals.svg') no-repeat center center;
-    background-size: 60%;
+footer {
+    flex-shrink: 0;
+    background: var(--blue);
+    color: var(--gray);
+    padding-block: 16px;
 }
 
-.crystal.journey {
-    background: url('../assets/runes/rune-journey.svg') no-repeat center center;
-    background-size: 60%;
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
-.crystal.opening {
-    background: url('../assets/runes/rune-opening.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.partnership {
-    background: url('../assets/runes/rune-partnership.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.joy {
-    background: url('../assets/runes/rune-joy.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.disruption {
-    background: url('../assets/runes/rune-disruption.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.constraint {
-    background: url('../assets/runes/rune-constraint.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.standstill {
-    background: url('../assets/runes/rune-standstill.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.harvest {
-    background: url('../assets/runes/rune-harvest.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.defense {
-    background: url('../assets/runes/rune-defense.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.initiation {
-    background: url('../assets/runes/rune-initiation.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.protection {
-    background: url('../assets/runes/rune-protection.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.wholeness {
-    background: url('../assets/runes/rune-wholeness.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.warrior {
-    background: url('../assets/runes/rune-warrior.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.growth {
-    background: url('../assets/runes/rune-growth.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.movement {
-    background: url('../assets/runes/rune-movement.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.flow {
-    background: url('../assets/runes/rune-flow.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.fertility {
-    background: url('../assets/runes/rune-fertility.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.breakthrough {
-    background: url('../assets/runes/rune-breakthrough.svg') no-repeat center center;
-    background-size: 60%;
-}
-
-.crystal.retreat {
-    background: url('../assets/runes/rune-retreat.svg') no-repeat center center;
-    background-size: 60%;
+.footer a:hover {
+    color: var(--yellow);
 }

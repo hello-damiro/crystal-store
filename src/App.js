@@ -1,10 +1,21 @@
-import Crystal from './components/shared/Crystal';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Ribbon from './components/Ribbon';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+
 function App() {
     return (
         <div className="App">
-            <Crystal color="#C42D2D" width="120" meaning="fertility" />
-            <Crystal color="#EEC900" width="150" meaning="breakthrough" />
-            <Crystal color="#6A0DAD" meaning="flow" shadowed="true" shadowGap="32" />
+            <Router>
+                <div className="content">
+                    <Ribbon />
+                    <Header />
+                    <Main />
+                </div>
+                <Footer />
+            </Router>
         </div>
     );
 }
