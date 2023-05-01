@@ -11,11 +11,10 @@ function About() {
             <div className="copy">
                 <h1>About</h1>
                 <p>
-                    Welcome to Odin's Crystal Shop, where we offer a unique selection of futhark
-                    crystals, handpicked and ethically sourced from the most dangerous and mythical
-                    locations in the Norse realms. Our passion for Norse mythology and ancient lore
-                    inspired us to create this online store, where we share our love for these
-                    mystical gemstones with the world.
+                    We offer a unique selection of futhark crystals, handpicked and ethically
+                    sourced from the most dangerous and mythical locations in the Norse realms. Our
+                    passion for Norse mythology and ancient lore inspired us to create this online
+                    store, where we share our love for these mystical gemstones with the world.
                 </p>
                 <p>
                     Each crystal has a story to tell, and we take pride in our ability to provide

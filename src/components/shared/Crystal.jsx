@@ -16,7 +16,7 @@ Crystal.defaultProps = {
     width: 100,
     meaning: '',
     shadowed: false,
-    shadowGap: 0,
+    shadowGap: 8,
 };
 
 export default Crystal;
