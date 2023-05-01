@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/crystal-store/static/css/main.10bb03de.css",
-    "main.js": "/crystal-store/static/js/main.25678c77.js",
+    "main.css": "/crystal-store/static/css/main.b31ac1a8.css",
+    "main.js": "/crystal-store/static/js/main.bba76a9b.js",
     "static/media/rune-fertility.svg": "/crystal-store/static/media/rune-fertility.b8c8829d91a357a6c839.svg",
+    "static/media/odin-logo-colored.svg": "/crystal-store/static/media/odin-logo-colored.825f099aa8d2bc7b394a.svg",
+    "static/media/cart.svg": "/crystal-store/static/media/cart.08d0ff77325b40362a2c.svg",
+    "static/media/rune-the-self.svg": "/crystal-store/static/media/rune-the-self.eb2950a49b9a3f8b67a6.svg",
     "static/media/rune-growth.svg": "/crystal-store/static/media/rune-growth.561015d8783b3650ddd3.svg",
     "static/media/rune-protection.svg": "/crystal-store/static/media/rune-protection.4a849298af2c1680da78.svg",
     "static/media/rune-initiation.svg": "/crystal-store/static/media/rune-initiation.fc6058ab44b6523618a7.svg",
@@ -28,11 +31,11 @@
     "static/media/rune-flow.svg": "/crystal-store/static/media/rune-flow.3bddd38be7c6bc1eeec6.svg",
     "static/media/rune-standstill.svg": "/crystal-store/static/media/rune-standstill.01dc3dcc774ce1f48007.svg",
     "static/media/crystal-shadow.svg": "/crystal-store/static/media/crystal-shadow.fecd84029a9be0c734f1.svg",
-    "main.10bb03de.css.map": "/crystal-store/static/css/main.10bb03de.css.map",
-    "main.25678c77.js.map": "/crystal-store/static/js/main.25678c77.js.map"
+    "main.b31ac1a8.css.map": "/crystal-store/static/css/main.b31ac1a8.css.map",
+    "main.bba76a9b.js.map": "/crystal-store/static/js/main.bba76a9b.js.map"
   },
   "entrypoints": [
-    "static/css/main.10bb03de.css",
-    "static/js/main.25678c77.js"
+    "static/css/main.b31ac1a8.css",
+    "static/js/main.bba76a9b.js"
   ]
 }
