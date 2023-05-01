@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&display=swap');
 @import url('reset.css');
 @import url('crystal.css');
+@import url('home.css');
 
 :root {
     /* SYSTEM FONTS */
@@ -25,6 +26,34 @@ button {
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button.primary {
+    background: var(--yellow);
+    padding-inline: 24px;
+    padding-block: 8px;
+    border-radius: 4px;
+}
+
+button.primary:hover {
+    background: var(--white);
+}
+
+button.secondary {
+    color: var(--green);
+}
+
+button.secondary:hover {
+    color: var(--yellow);
+}
+
+.buttons {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: start;
+    padding-block: 24px;
 }
 
 body {
@@ -33,28 +62,30 @@ body {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 1rem;
     line-height: 1.4rem;
-    height: 100%;
 }
 
 .App {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .content {
     flex: 1 0 auto;
+    height: 100%;
 }
 
-.hidden {
-    display: none;
-    background: red;
+main {
+    height: calc(100vh - 200px);
 }
 
+section,
 .container {
     max-width: var(--contain-w);
     margin-inline: auto;
     padding-inline: 16px;
+    height: 100%;
 }
 
 .ribbon {
@@ -151,4 +182,18 @@ footer {
 
 .footer a:hover {
     color: var(--yellow);
+}
+
+.hidden {
+    display: none;
+    background: red;
+}
+
+.about .illustration,
+.home .illustration {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+    padding-block: 32px;
 }

@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Ribbon() {
     return (
         <div className="ribbon">
             <h4>80% discount for the first 10 customers!</h4>
-            <button>shop now</button>
+            <Link to={'/shop'}>
+                <button>Shop Now</button>
+            </Link>
         </div>
     );
 }

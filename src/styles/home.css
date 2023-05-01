@@ -1,0 +1,40 @@
+.about,
+.home {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px;
+    align-items: center;
+    padding-block: 16px;
+}
+
+.about .copy,
+.home .copy {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.about .copy h1,
+.home .copy h1 {
+    font-size: 2.8rem;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+
+.about .copy h3,
+.home .copy h3 {
+    font-size: 1.6rem;
+}
+
+.about .writeup,
+.home .writeup {
+    padding-block: 8px;
+}
+
+.about .writeup p,
+.home .writeup p {
+    padding-block: 8px;
+}
