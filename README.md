@@ -8,9 +8,11 @@ The Odin Project - Intermediate JS project
 
 SEE LIVE WORKING APP [HERE](http://hello-damiro.github.io/crystal-store)
 
-**Day 1**: Prepared environment and initial files. Design and conceptualize the shop on figma. I would like to use readily available API but cant find anything on the interwebs thats suitable with Odin's design system. SO I made something up. Enter **Odin's Crystal Store**, and yeah, I made use of futharks again and conceptualize an imaginary crystals to sell, because why not. 🤣
+**Day 1**: Prepared environment and initial files. Design and conceptualize the shop on figma. I would like to use readily available API but cant find anything on the interwebs thats suitable with Odin's design system. So I made something up. Enter **Odin's Crystal Store**, and yeah, I made use of futharks again and conceptualize an imaginary crystals to sell, because why not. 🤣
 
-**Day 2**: Done with the overall layout and css. Will be working with shop logic next. Had fun deisgning this simple website. All imaginary.
+**Day 2**: Done with the overall layout and css. Will be working with shop logic next. Had fun designing this simple website. All imaginary. Ive completed the routing and links using `react-router-dom`. I learned to use `useParams` in the process. Hopefully I can get accustomed on using these methods and functions in react.
+
+**Day 3**:
 
 </br>
 
