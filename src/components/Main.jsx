@@ -9,7 +9,7 @@ import Details from './pages/Details';
 function Main() {
     return (
         <main>
-            <Routes basename="/crystal-store">
+            <Routes basename={process.env.PUBLIC_URL}>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/shop" element={<Shop />} />
