@@ -13,7 +13,7 @@ function Main() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/shop" element={<Shop />} />
-                <Route path="/shop/:id" element={<Details />} />
+                <Route path="/shop/:futhark" element={<Details />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </main>

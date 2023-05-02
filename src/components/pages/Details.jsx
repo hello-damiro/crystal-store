@@ -4,11 +4,13 @@ import Crystal from '../shared/Crystal';
 import crystalData from '../../data/CrystalsData';
 
 function Details() {
-    const { id } = useParams();
+    const { futhark } = useParams();
     const [crystal, setCrystal] = useState({});
 
     useEffect(() => {
-        setCrystal(crystalData[id - 1]);
+        const data = crystalData.find((crystal) => crystal.futhark === futhark);
+        console.log(data);
+        setCrystal(data);
     }, []);
 
     return (
