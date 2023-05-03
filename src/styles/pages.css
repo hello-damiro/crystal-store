@@ -1,7 +1,9 @@
 .about,
+.cart,
 .crystal-detail,
 .contact,
 .home {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -12,6 +14,7 @@
 }
 
 .about .copy,
+.cart .copy,
 .crystal-detail .copy,
 .contact .copy,
 .home .copy {
@@ -22,6 +25,7 @@
 }
 
 .about .copy h1,
+.cart .copy h1,
 .contact .copy h1,
 .home .copy h1 {
     font-size: 2.8rem;
@@ -31,6 +35,7 @@
 }
 
 .about .copy h3,
+.cart .copy h3,
 .contact .copy h3,
 .home .copy h3 {
     font-size: 1.6rem;
@@ -38,6 +43,7 @@
 }
 
 .about .writeup,
+.cart .writeup,
 .crystal-detail .writeup,
 .contact .writeup,
 .home .writeup {
@@ -45,6 +51,7 @@
 }
 
 .about .writeup p,
+.cart .writeup p,
 .contact .writeup p,
 .home .writeup p {
     padding-block: 8px;

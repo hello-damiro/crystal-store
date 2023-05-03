@@ -33,10 +33,10 @@ function Header() {
                                 </Link>
                             </li>
                             <li>
-                                <div className="cart-group">
+                                <Link to="/cart" className="cart-group">
                                     <button className="cart-button"></button>
                                     <div className="cart-num">8</div>
-                                </div>
+                                </Link>
                             </li>
                         </ul>
                     </nav>
