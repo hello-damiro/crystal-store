@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Crystal from './Crystal';
 
-function Card({ futhark, crystal, color, meaning, price, tagline }) {
+function Card({ futhark, crystal, color, meaning, price, tagline, click }) {
     return (
         <div className="card">
             <div>
@@ -19,12 +19,12 @@ function Card({ futhark, crystal, color, meaning, price, tagline }) {
                 </div>
             </div>
             <div className="shop-buttons">
-                <Link to="/about">
-                    <button className="primary">Add to Cart</button>
-                </Link>
                 <Link to={`/shop/${futhark}`}>
                     <button className="secondary">View Details</button>
                 </Link>
+                <button onClick={click} className="primary">
+                    Add to Cart
+                </button>
             </div>
         </div>
     );
