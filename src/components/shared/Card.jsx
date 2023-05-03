@@ -24,7 +24,7 @@ function Card({ crystal, addToCart }) {
                 </div>
             </div>
             <div className="shop-buttons">
-                <Link to={`/shop/${crystal.futhark}`}>
+                <Link to={`/shop/${crystal.futhark.toLowerCase()}`}>
                     <button className="secondary">View Details</button>
                 </Link>
                 <button onClick={addToCart} className="primary">

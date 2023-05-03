@@ -14,15 +14,15 @@ SEE LIVE WORKING APP [HERE](http://hello-damiro.github.io/crystal-store)
 
 **Day 3**: Studied `useContext`.
 
-**Day 4**: Noticed that I have not designed the UI of the cart. Spent half day, designing it, keeping in mind the implementation of `useContext` as it needs to encapsulate the components that will use the information it provided.
+**Day 4**: Noticed that I have not designed the UI of the cart. Spent half day, designing and CSS styling it while keeping in mind the implementation of `useContext` as it needs to encapsulate the components that will use the information it provided.
 
 **Day 5**: I made `CartContext` to only cater the use of the shop page. It does not have the functionality of emptying, deleting, increasing and decresing of cart items quantity and length. I think, I need to spend another day to study `useReducer` for the implementation of those functionalities.
 
 ## Hooks Used
 
-- [X] `useState`
+- [x] `useState`
 - [x] `useEffect`
-- [X] `useContext`
+- [x] `useContext`
 
 </br>
 
