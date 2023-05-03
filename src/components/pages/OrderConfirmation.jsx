@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function OrderConfirmation() {
+    const handleClick = () => {
+        // TODO function to empty cart here
+        console.log('empty cart');
+    };
     return (
         <div className="confirmation">
             <div className="copy">
@@ -22,7 +26,9 @@ function OrderConfirmation() {
                 </p>
                 <div className="buttons">
                     <Link to="/shop">
-                        <button className="primary">Shop More</button>
+                        <button onClick={handleClick} className="primary">
+                            Shop More
+                        </button>
                     </Link>
                     <Link to="/">
                         <button className="secondary">Back to Home</button>

@@ -12,7 +12,17 @@ SEE LIVE WORKING APP [HERE](http://hello-damiro.github.io/crystal-store)
 
 **Day 2**: Done with the overall layout and css. Will be working with shop logic next. Had fun designing this simple website. All imaginary. Ive completed the routing and links using `react-router-dom`. I learned to use `useParams` in the process. Hopefully I can get accustomed on using these methods and functions in react.
 
-**Day 3**:
+**Day 3**: Studied `useContext`.
+
+**Day 4**: Noticed that I have not designed the UI of the cart. Spent half day, designing it, keeping in mind the implementation of `useContext` as it needs to encapsulate the components that will use the information it provided.
+
+**Day 5**: I made `CartContext` to only cater the use of the shop page. It does not have the functionality of emptying, deleting, increasing and decresing of cart items quantity and length. I think, I need to spend another day to study `useReducer` for the implementation of those functionalities.
+
+## Hooks Used
+
+- [X] `useState`
+- [x] `useEffect`
+- [X] `useContext`
 
 </br>
 
