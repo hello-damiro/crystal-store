@@ -4,17 +4,18 @@ import Ribbon from './components/Ribbon';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-
-export const CrystalContext = React.createContext();
+import { CartProvider } from './components/hooks/CartContext';
 
 function App() {
     return (
         <div className="App">
             <Router>
                 <div className="content">
-                    <Ribbon />
-                    <Header />
-                    <Main />
+                    <CartProvider>
+                        <Ribbon />
+                        <Header />
+                        <Main />
+                    </CartProvider>
                 </div>
                 <Footer />
             </Router>

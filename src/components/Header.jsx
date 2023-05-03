@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from './hooks/CartContext';
 
 function Header() {
+    const cartContext = useCart();
+
     return (
         <header>
             <div className="container">
@@ -35,7 +38,9 @@ function Header() {
                             <li>
                                 <Link to="/cart" className="cart-group">
                                     <button className="cart-button"></button>
-                                    <div className="cart-num">8</div>
+                                    {cartContext.length >= 1 && (
+                                        <div className="cart-num">{cartContext.length}</div>
+                                    )}
                                 </Link>
                             </li>
                         </ul>

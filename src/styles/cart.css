@@ -126,7 +126,7 @@
     padding-block: 24px;
 }
 
-.cart .confirmation {
+.confirmation {
     position: absolute;
     top: 0;
     left: 0;
@@ -136,8 +136,10 @@
     align-items: center;
 }
 
-.cart .confirmation .copy {
+.confirmation .copy {
     padding: 64px;
+    max-width: var(--contain-w);
+    margin-inline: auto;
 }
 
 .confirmation h4 {

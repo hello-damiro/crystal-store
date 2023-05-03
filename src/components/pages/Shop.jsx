@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Card from '../shared/Card';
 import crystalData from '../../data/CrystalsData';
+import { useCart, useCartUpdate } from '../hooks/CartContext';
 
 function Shop() {
     const data = crystalData;
+    const cartContext = useCart();
+    const cartContextUpdate = useCartUpdate();
+
+    useEffect(() => {
+        console.log('from shop', cartContext);
+    }, [cartContext]);
+
     return (
         <section className="shop">
-            <h1>Odin Crystal Collections</h1>
+            <h1>Odin Crystal Collections {cartContext.length}</h1>
             <p>
                 Our store offers powerful Futhark crystals imbued with the essence of Odin, the
                 Norse god of wisdom and magic. These crystals hold deep spiritual significance and
@@ -25,6 +33,7 @@ function Shop() {
                         color={crystal.color}
                         meaning={crystal.meaning.toLowerCase()}
                         tagline={crystal.tagline}
+                        addToCart={() => cartContextUpdate(crystal.id)}
                     />
                 ))}
             </div>

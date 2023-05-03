@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Crystal from './Crystal';
 
-function Card({ futhark, crystal, color, meaning, price, tagline, click }) {
+function Card({ futhark, crystal, color, meaning, price, tagline, addToCart }) {
     return (
         <div className="card">
             <div>
@@ -22,7 +22,7 @@ function Card({ futhark, crystal, color, meaning, price, tagline, click }) {
                 <Link to={`/shop/${futhark}`}>
                     <button className="secondary">View Details</button>
                 </Link>
-                <button onClick={click} className="primary">
+                <button onClick={addToCart} className="primary">
                     Add to Cart
                 </button>
             </div>
