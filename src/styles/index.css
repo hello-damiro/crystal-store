@@ -167,12 +167,10 @@ nav ul {
     letter-spacing: 0.1rem;
 }
 
-nav .link-button,
 nav button {
     color: var(--gray);
 }
 
-nav .link-button:hover,
 nav button:hover {
     color: var(--yellow);
 }

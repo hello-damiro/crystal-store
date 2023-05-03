@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from './hooks/CartContext';
 
 function Header() {
     const cartContext = useCart();
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        const total = cartContext.reduce((num, item) => {
+            return num + item.count;
+        }, 0);
+        setCount(total);
+    }, [cartContext]);
 
     return (
         <header>
@@ -39,7 +47,7 @@ function Header() {
                                 <Link to="/cart" className="cart-group">
                                     <button className="cart-button"></button>
                                     {cartContext.length >= 1 && (
-                                        <div className="cart-num">{cartContext.length}</div>
+                                        <div className="cart-num">{count}</div>
                                     )}
                                 </Link>
                             </li>

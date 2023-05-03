@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Card from '../shared/Card';
 import crystalData from '../../data/CrystalsData';
 import { useCart, useCartUpdate } from '../hooks/CartContext';
@@ -7,10 +7,6 @@ function Shop() {
     const data = crystalData;
     const cartContext = useCart();
     const cartContextUpdate = useCartUpdate();
-
-    useEffect(() => {
-        console.log('from shop', cartContext);
-    }, [cartContext]);
 
     return (
         <section className="shop">
