@@ -22,13 +22,7 @@ function Shop() {
                 {data.map((crystal) => (
                     <Card
                         key={crystal.id}
-                        id={crystal.id}
-                        futhark={crystal.futhark}
-                        crystal={crystal.crystal}
-                        price={crystal.price}
-                        color={crystal.color}
-                        meaning={crystal.meaning.toLowerCase()}
-                        tagline={crystal.tagline}
+                        crystal={crystal}
                         addToCart={() => cartContextUpdate(crystal.id)}
                     />
                 ))}

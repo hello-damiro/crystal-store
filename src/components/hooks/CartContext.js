@@ -17,14 +17,14 @@ export function CartProvider({ children }) {
     const [cartItems, setCartItems] = useState([]);
     const updateCart = (id) => {
         console.log('passing context id', id);
-        const foundCrystal = data.find((crystal) => crystal.id === id);
-        const item = cartItems.filter((item) => item.foundCrystal.id === id);
+        const crystal = data.find((crystal) => crystal.id === id);
+        const item = cartItems.filter((item) => item.crystal.id === id);
         if (item.length === 0) {
-            setCartItems([...cartItems, { foundCrystal, count: 1 }]);
+            setCartItems([...cartItems, { crystal, count: 1 }]);
         } else {
             setCartItems(
                 cartItems.map((item) =>
-                    item.foundCrystal.id === id ? { ...item, count: item.count + 1 } : item
+                    item.crystal.id === id ? { ...item, count: item.count + 1 } : item
                 )
             );
         }
