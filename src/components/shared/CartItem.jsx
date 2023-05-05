@@ -1,6 +1,7 @@
 import React from 'react';
 import Crystal from './Crystal';
 import { useCart } from '../hooks/CartContext';
+import { formatCurrency } from '../helpers/CommonFunctions';
 
 function CartItem({ crystal, qty }) {
     const cart = useCart();
@@ -34,7 +35,8 @@ function CartItem({ crystal, qty }) {
                     </div>
                 </div>
             </div>
-            <h4 className="item-price">$ {qty * crystal.price}</h4>
+            <h4 className="item-price">{}</h4>
+            <h4 className="item-price">{formatCurrency('$ ', ',', qty * crystal.price)}</h4>
             <button
                 onClick={(id) => cart.removeToCart(crystal.id)}
                 className="remove-item-button"

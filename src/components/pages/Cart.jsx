@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import CartItem from '../shared/CartItem';
 import OrderConfirmation from './OrderConfirmation';
 import { useCart } from '../hooks/CartContext';
+import { formatCurrency } from '../helpers/CommonFunctions';
 
 function Cart() {
     const cart = useCart();
@@ -57,7 +58,9 @@ function Cart() {
                                             </h4>
                                         </div>
                                     </div>
-                                    <h4 className="total-price">$ {totalPrice}</h4>
+                                    <h4 className="total-price">
+                                        {formatCurrency('$ ', ',', totalPrice)}
+                                    </h4>
                                 </div>
                                 <div className="total-buttons">
                                     <Link to="/shop">
