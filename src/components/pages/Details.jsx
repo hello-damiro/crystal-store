@@ -12,7 +12,7 @@ function Details() {
     useEffect(() => {
         const crystal = crystalData.find((data) => data.futhark.toLowerCase() === futhark);
         setCrystal(crystal);
-    });
+    }, [futhark]);
 
     return (
         <section className="crystal-detail">
