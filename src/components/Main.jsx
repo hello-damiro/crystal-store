@@ -18,7 +18,6 @@ function Main() {
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/shop/:futhark" element={<Details />} />
                 <Route path="/shop" element={<Shop />} />
-                <Route path="/shop/*" element={<NotFound />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </main>
