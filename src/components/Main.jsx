@@ -14,11 +14,12 @@ function Main() {
             <Routes basename={process.env.PUBLIC_URL}>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/shop" element={<Shop />} />
-                <Route path="/shop/:futhark" element={<Details />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/cart" element={<Cart />} />
-                <Route path="/*" element={<NotFound />} />
+                <Route path="/shop/:futhark" element={<Details />} />
+                <Route path="/shop" element={<Shop />} />
+                <Route path="/shop/*" element={<NotFound />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </main>
     );

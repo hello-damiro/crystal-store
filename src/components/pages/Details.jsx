@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Crystal from '../shared/Crystal';
+import NotFound from './NotFound';
 import { useCart } from '../hooks/CartContext';
 
 function Details() {
@@ -13,18 +14,20 @@ function Details() {
         setCrystal(crystal);
     }, [cart, futhark]);
 
+    if (!crystal || !crystal.meaning) {
+        return <NotFound />;
+    }
+
     return (
         <section className="crystal-detail">
             <div className="illustration">
-                {crystal.meaning && (
-                    <Crystal
-                        meaning={crystal.meaning.toLowerCase()}
-                        color={crystal.color}
-                        width={150}
-                        shadowed={true}
-                        shadowGap={32}
-                    />
-                )}
+                <Crystal
+                    meaning={crystal.meaning.toLowerCase()}
+                    color={crystal.color}
+                    width={150}
+                    shadowed={true}
+                    shadowGap={32}
+                />
             </div>
             <div className="copy">
                 <h3>{crystal.futhark}</h3>
