@@ -1,11 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Crystal from './Crystal';
 import { useCart } from '../hooks/CartContext';
 import { formatCurrency } from '../helpers/CommonFunctions';
 
 function CartItem({ crystal, qty }) {
     const cart = useCart();
-
     return (
         <div className="cart-item">
             <div className="cart-item-details">
@@ -35,7 +35,6 @@ function CartItem({ crystal, qty }) {
                     </div>
                 </div>
             </div>
-            <h4 className="item-price">{}</h4>
             <h4 className="item-price">{formatCurrency('$ ', ',', qty * crystal.price)}</h4>
             <button
                 onClick={(id) => cart.removeToCart(crystal.id)}
@@ -44,5 +43,10 @@ function CartItem({ crystal, qty }) {
         </div>
     );
 }
+
+CartItem.propTypes = {
+    crystal: PropTypes.object.isRequired,
+    qty: PropTypes.number.isRequired,
+};
 
 export default CartItem;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Crystal from './Crystal';
 
@@ -34,5 +35,10 @@ function Card({ crystal, addToCart }) {
         </div>
     );
 }
+
+Card.propTypes = {
+    crystal: PropTypes.object.isRequired,
+    addToCart: PropTypes.func.isRequired,
+};
 
 export default Card;
