@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from '../hooks/CartContext';
 
 function OrderConfirmation() {
-    const handleClick = () => {
-        // TODO function to empty cart here
-        console.log('empty cart');
-    };
+    const cart = useCart();
     return (
         <div className="confirmation">
             <div className="copy">
@@ -26,7 +24,7 @@ function OrderConfirmation() {
                 </p>
                 <div className="buttons">
                     <Link to="/shop">
-                        <button onClick={handleClick} className="primary">
+                        <button onClick={() => cart.clearCart()} className="primary">
                             Shop More
                         </button>
                     </Link>

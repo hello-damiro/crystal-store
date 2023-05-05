@@ -1,7 +1,10 @@
 import React from 'react';
 import Crystal from './Crystal';
+import { useCart } from '../hooks/CartContext';
 
 function CartItem({ crystal, qty }) {
+    const cart = useCart();
+
     return (
         <div className="cart-item">
             <div className="cart-item-details">
@@ -17,16 +20,25 @@ function CartItem({ crystal, qty }) {
                         {crystal.futhark} {crystal.crystal}
                     </h4>
                     <div className="cart-item-pcs">
-                        <button className="minus-item-button" />
+                        <button
+                            onClick={(id) => cart.minusFromCart(crystal.id)}
+                            className="minus-item-button"
+                        />
                         <h4 className="item-pcs">
                             {qty} {qty === 1 ? 'pc' : 'pcs'}
                         </h4>
-                        <button className="add-item-button" />
+                        <button
+                            onClick={(id) => cart.addToCart(crystal.id)}
+                            className="add-item-button"
+                        />
                     </div>
                 </div>
             </div>
             <h4 className="item-price">$ {qty * crystal.price}</h4>
-            <button className="remove-item-button" />
+            <button
+                onClick={(id) => cart.removeToCart(crystal.id)}
+                className="remove-item-button"
+            />
         </div>
     );
 }

@@ -1,16 +1,15 @@
 import React from 'react';
 import Card from '../shared/Card';
 import crystalData from '../../data/CrystalsData';
-import { useCart, useCartUpdate } from '../hooks/CartContext';
+import { useCart } from '../hooks/CartContext';
 
 function Shop() {
-    const data = crystalData;
-    const cartContext = useCart();
-    const cartContextUpdate = useCartUpdate();
+    const crystals = crystalData;
+    const cart = useCart();
 
     return (
         <section className="shop">
-            <h1>Odin Crystal Collections {cartContext.length}</h1>
+            <h1>Odin Crystal Collections</h1>
             <p>
                 Our store offers powerful Futhark crystals imbued with the essence of Odin, the
                 Norse god of wisdom and magic. These crystals hold deep spiritual significance and
@@ -19,11 +18,11 @@ function Shop() {
                 crystals.
             </p>
             <div className="cards">
-                {data.map((crystal) => (
+                {crystals.map((crystal) => (
                     <Card
                         key={crystal.id}
                         crystal={crystal}
-                        addToCart={() => cartContextUpdate(crystal.id)}
+                        addToCart={() => cart.addToCart(crystal.id)}
                     />
                 ))}
             </div>

@@ -1,29 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useReducer } from 'react';
 import { Link } from 'react-router-dom';
 import CartItem from '../shared/CartItem';
 import OrderConfirmation from './OrderConfirmation';
-import { useCart, useCartUpdate } from '../hooks/CartContext';
+import { useCart } from '../hooks/CartContext';
 
 function Cart() {
-    const [checkout, setCheckout] = useState(false);
-    const handleCheckout = () => setCheckout((prevValue) => !prevValue);
+    const cart = useCart();
 
     const [totalQty, setTotalQty] = useState(0);
     const [totalPrice, setTotalPrice] = useState(0);
+    const [checkout, setCheckout] = useState(false);
+    const handleCheckout = () => setCheckout((prevValue) => !prevValue);
 
-    const cartContext = useCart();
-    // const cartUpdateContext = useCartUpdate();
-
+    // initial value of reduer is the context info from the shop (cartContext)
     useEffect(() => {
-        const qty = cartContext.reduce((total, item) => {
+        const qty = cart.cartItems.reduce((total, item) => {
             return total + item.count;
         }, 0);
         setTotalQty(qty);
-        const price = cartContext.reduce((total, item) => {
+        const price = cart.cartItems.reduce((total, item) => {
             return total + item.count * item.crystal.price;
         }, 0);
         setTotalPrice(price);
-    }, [cartContext]);
+    }, [cart]);
 
     return (
         <>
@@ -33,7 +32,7 @@ function Cart() {
                 <section className="cart">
                     <div className="copy">
                         <h1>Cart</h1>
-                        {cartContext.length === 0 ? (
+                        {cart.cartItems.length === 0 ? (
                             <>
                                 <h3>You have an empty cart</h3>
                                 <Link to="/shop">
@@ -43,15 +42,15 @@ function Cart() {
                         ) : (
                             <>
                                 <h3>Order Summary</h3>
-                                {cartContext.map((item) => (
+                                {cart.cartItems.map((item) => (
                                     <CartItem crystal={item.crystal} qty={item.count} />
                                 ))}
                                 <div className="cart-total">
                                     <div className="cart-item-details">
                                         <div className="cart-total-title">
                                             <h4>
-                                                {cartContext.length} Crystal{' '}
-                                                {cartContext.length === 1 ? 'Type' : 'Types'}
+                                                {cart.cartItems.length} Crystal{' '}
+                                                {cart.cartItems.length === 1 ? 'Type' : 'Types'}
                                             </h4>
                                             <h4 className="total-pcs">
                                                 {totalQty} {totalQty === 1 ? 'pc' : 'pcs'}

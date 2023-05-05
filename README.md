@@ -18,6 +18,8 @@ SEE LIVE WORKING APP [HERE](http://hello-damiro.github.io/crystal-store)
 
 **Day 5**: I made `CartContext` to only cater the use of the shop page. It does not have the functionality of emptying, deleting, increasing and decresing of cart items quantity and length. I think, I need to spend another day to study `useReducer` for the implementation of those functionalities.
 
+**Day 6**: Im lost combining the 2 hooks, `useContext` and `useReducer`. I dont want to admit it, but I was stuck. 😭 But after a nice sleep, I was able to see what Iwas doing wrong. I was using `useReducer` all over the place. What I did was to use the reducer on the context, and let the `useContext` propagate all the changes. It was nice and smooth.
+
 ## Hooks Used
 
 - [x] `useState`

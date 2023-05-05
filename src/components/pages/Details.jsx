@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Crystal from '../shared/Crystal';
 import crystalData from '../../data/CrystalsData';
-import { useCartUpdate } from '../hooks/CartContext';
+import { useCart } from '../hooks/CartContext';
 
 function Details() {
     const { futhark } = useParams();
     const [crystal, setCrystal] = useState({});
-    const updateCart = useCartUpdate();
+    const cart = useCart();
 
     useEffect(() => {
         const crystal = crystalData.find((data) => data.futhark.toLowerCase() === futhark);
@@ -36,7 +36,7 @@ function Details() {
                 <p>{crystal.sell}</p>
 
                 <div className="buttons">
-                    <button onClick={() => updateCart(crystal.id)} className="primary">
+                    <button onClick={() => cart.addToCart(crystal.id)} className="primary">
                         Add to Cart
                     </button>
                     <Link to="/shop">
