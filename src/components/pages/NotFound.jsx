@@ -15,7 +15,7 @@ function NotFound() {
         };
         const randomCrystals = [getRandomCrystal()];
         setCrystals(randomCrystals);
-    }, []);
+    }, [shop]);
 
     return (
         <section className="about">
