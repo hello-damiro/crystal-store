@@ -1,12 +1,12 @@
 # crystal-store
 
-## Warning! This is a work in progress
+## The Odin Project - Intermediate JS project
+
+SEE LIVE WORKING APP [HERE](http://hello-damiro.github.io/crystal-store)
 
 </br>
 
-The Odin Project - Intermediate JS project
-
-SEE LIVE WORKING APP [HERE](http://hello-damiro.github.io/crystal-store)
+I'm begining to see the power of React, mainly because of using hooks. I'm beginning to imagine how easy it is to create a full blown web application with the use of these React hooks compare to using only jQuery and vanilla JS. I'm also excited to use React and how it manages its components for UI design systems.
 
 **Day 1**: Prepared environment and initial files. Design and conceptualize the shop on figma. I would like to use readily available API but cant find anything on the interwebs thats suitable with Odin's design system. So I made something up. Enter **Odin's Crystal Store**, and yeah, I made use of futharks again and conceptualize an imaginary crystals to sell, because why not. 🤣
 
@@ -16,21 +16,28 @@ SEE LIVE WORKING APP [HERE](http://hello-damiro.github.io/crystal-store)
 
 **Day 4**: Noticed that I have not designed the UI of the cart. Spent half day, designing and CSS styling it while keeping in mind the implementation of `useContext` as it needs to encapsulate the components that will use the information it provided.
 
-**Day 5**: I made `CartContext` to only cater the use of the shop page. It does not have the functionality of emptying, deleting, increasing and decresing of cart items quantity and length. I think, I need to spend another day to study `useReducer` for the implementation of those functionalities.
+**Day 5**: I made `CartContext` to only cater the use of the shop page. It does not have the functionality of emptying, deleting, increasing and decreasing of cart items quantity and length. I think, I need to spend another day to study `useReducer` for the implementation of those functionalities.
 
-**Day 6**: Im lost combining the 2 hooks, `useContext` and `useReducer`. I dont want to admit it, but I was stuck. 😭 But after a nice sleep, I was able to see what Iwas doing wrong. I was using `useReducer` all over the place. What I did was to use the reducer on the context, and let the `useContext` propagate all the changes. It was nice and smooth.
+**Day 6**: Im lost combining the 2 hooks, `useContext` and `useReducer`. I dont want to admit it, but I was stuck. 😭 But after a nice sleep, I was able to see what I was doing wrong. I was using `useReducer` all over the place. What I did was to use the reducer on the context only, and let the `useContext` propagate all the changes. It was nice and smooth. **Completed 05 May 2023**
+
+</br>
 
 ## Hooks Used
 
 - [x] `useState`
 - [x] `useEffect`
 - [x] `useContext`
+- [x] `useReducer`
 
 </br>
 
 ## Project screenshots
 
 ![Screenshot](https://github.com/hello-damiro/crystal-store/blob/main/src/assets/screenshot.png?raw=true)
+
+![Screenshot](https://github.com/hello-damiro/crystal-store/blob/main/src/assets/screenshot_2.png?raw=true)
+
+![Screenshot](https://github.com/hello-damiro/crystal-store/blob/main/src/assets/screenshot_3.png?raw=true)
 
 </br>
 

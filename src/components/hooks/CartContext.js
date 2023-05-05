@@ -22,10 +22,13 @@ export function CartProvider({ children }) {
     const clearCart = (id) => {
         dispatch({ type: ACTIONS.CLEAR, payload: id });
     };
+    const renderItem = (id) => {
+        dispatch({ type: ACTIONS.RENDER, payload: id });
+    };
 
     return (
         <CartContext.Provider
-            value={{ cartItems, addToCart, minusFromCart, removeToCart, clearCart }}>
+            value={{ cartItems, addToCart, minusFromCart, removeToCart, clearCart, renderItem }}>
             {children}
         </CartContext.Provider>
     );

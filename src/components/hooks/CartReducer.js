@@ -5,10 +5,14 @@ export const ACTIONS = {
     MINUS: 'minus',
     REMOVE: 'remove',
     CLEAR: 'clear',
+    RENDER: 'render',
 };
 
 export function cartReducer(cartItems, action) {
     switch (action.type) {
+        case ACTIONS.RENDER: {
+            return crystalData.find((crystal) => crystal.id === action.payload);
+        }
         case ACTIONS.REMOVE: {
             return cartItems.filter((item) => item.crystal.id !== action.payload);
         }
@@ -22,7 +26,6 @@ export function cartReducer(cartItems, action) {
                     item.crystal.id === action.payload ? { ...item, count: item.count + 1 } : item
                 );
             }
-            console.log('passing context id', item.length, cartItems);
             return cartItems;
         }
         case ACTIONS.MINUS: {

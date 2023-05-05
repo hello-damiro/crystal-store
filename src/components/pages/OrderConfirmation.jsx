@@ -29,7 +29,9 @@ function OrderConfirmation() {
                         </button>
                     </Link>
                     <Link to="/">
-                        <button className="secondary">Back to Home</button>
+                        <button onClick={() => cart.clearCart()} className="secondary">
+                            Back to Home
+                        </button>
                     </Link>
                 </div>
             </div>

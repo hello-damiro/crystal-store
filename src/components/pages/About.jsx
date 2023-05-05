@@ -5,21 +5,20 @@ import { randomNumber } from '../helpers/CommonFunctions';
 import crystalData from '../../data/CrystalsData';
 
 function About() {
-    const [crystals, setCrystals] = useState([]);
+    const [crystal, setCrystal] = useState([]);
 
     useEffect(() => {
         const getRandomCrystal = () => {
             const randomIndex = randomNumber(crystalData.length);
             return crystalData[randomIndex];
         };
-        const randomCrystals = [getRandomCrystal()];
-        setCrystals(randomCrystals);
+        setCrystal(getRandomCrystal());
     }, []);
 
     return (
         <section className="about">
             <div className="illustration">
-                {crystals.map((crystal) => (
+                {crystal.meaning && (
                     <Crystal
                         key={crystal.id}
                         color={crystal.color}
@@ -28,7 +27,7 @@ function About() {
                         shadowed={true}
                         shadowGap={32}
                     />
-                ))}
+                )}
             </div>
             <div className="copy">
                 <h1>About</h1>
