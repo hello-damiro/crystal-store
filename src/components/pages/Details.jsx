@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Crystal from '../shared/Crystal';
-import crystalData from '../../data/CrystalsData';
 import { useCart } from '../hooks/CartContext';
 
 function Details() {
@@ -10,9 +9,9 @@ function Details() {
     const cart = useCart();
 
     useEffect(() => {
-        const crystal = crystalData.find((data) => data.futhark.toLowerCase() === futhark);
+        const crystal = cart.collection.find((data) => data.futhark.toLowerCase() === futhark);
         setCrystal(crystal);
-    }, [futhark]);
+    }, [cart, futhark]);
 
     return (
         <section className="crystal-detail">

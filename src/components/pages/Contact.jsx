@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Crystal from '../shared/Crystal';
-import crystalData from '../../data/CrystalsData';
 import { randomNumber } from '../helpers/CommonFunctions';
+import { useCart } from '../hooks/CartContext';
 
 function Contact() {
+    const shop = useCart();
     const [crystal, setCrystal] = useState([]);
 
     useEffect(() => {
         const getRandomCrystal = () => {
-            const randomIndex = randomNumber(crystalData.length);
-            return crystalData[randomIndex];
+            const randomIndex = randomNumber(shop.collection.length);
+            return shop.collection[randomIndex];
         };
         setCrystal(getRandomCrystal());
-    }, []);
+    }, [shop]);
 
     return (
         <section className="contact">

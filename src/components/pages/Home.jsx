@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Crystal from '../shared/Crystal';
-import crystalData from '../../data/CrystalsData';
 import { randomNumber, randomBetween } from '../helpers/CommonFunctions';
+import { useCart } from '../hooks/CartContext';
 
 function Home() {
+    const shop = useCart();
     const [crystals, setCrystals] = useState([]);
 
     useEffect(() => {
         const getRandomCrystal = () => {
-            const randomIndex = randomNumber(crystalData.length);
-            return crystalData[randomIndex];
+            const randomIndex = randomNumber(shop.collection.length);
+            return shop.collection[randomIndex];
         };
         const randomCrystals = [getRandomCrystal(), getRandomCrystal(), getRandomCrystal()];
         setCrystals(randomCrystals);

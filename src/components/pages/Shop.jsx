@@ -1,12 +1,9 @@
 import React from 'react';
 import Card from '../shared/Card';
-import crystalData from '../../data/CrystalsData';
 import { useCart } from '../hooks/CartContext';
 
 function Shop() {
-    const crystals = crystalData;
     const cart = useCart();
-
     return (
         <section className="shop">
             <h1>Odin Crystal Collections</h1>
@@ -18,7 +15,7 @@ function Shop() {
                 crystals.
             </p>
             <div className="cards">
-                {crystals.map((crystal) => (
+                {cart.collection.map((crystal) => (
                     <Card
                         key={crystal.id}
                         crystal={crystal}

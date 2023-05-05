@@ -2,23 +2,25 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Crystal from '../shared/Crystal';
 import { randomNumber } from '../helpers/CommonFunctions';
-import crystalData from '../../data/CrystalsData';
+import { useCart } from '../hooks/CartContext';
 
 function About() {
-    const [crystal, setCrystal] = useState([]);
+    const shop = useCart();
+    const [crystals, setCrystals] = useState([]);
 
     useEffect(() => {
         const getRandomCrystal = () => {
-            const randomIndex = randomNumber(crystalData.length);
-            return crystalData[randomIndex];
+            const randomIndex = randomNumber(shop.collection.length);
+            return shop.collection[randomIndex];
         };
-        setCrystal(getRandomCrystal());
-    }, []);
+        const randomCrystals = [getRandomCrystal()];
+        setCrystals(randomCrystals);
+    }, [shop]);
 
     return (
         <section className="about">
             <div className="illustration">
-                {crystal.meaning && (
+                {crystals.map((crystal) => (
                     <Crystal
                         key={crystal.id}
                         color={crystal.color}
@@ -27,7 +29,7 @@ function About() {
                         shadowed={true}
                         shadowGap={32}
                     />
-                )}
+                ))}
             </div>
             <div className="copy">
                 <h1>About</h1>

@@ -1,5 +1,6 @@
 import React, { useReducer, useContext } from 'react';
 import { ACTIONS, cartReducer } from './CartReducer';
+import crystalData from '../../data/CrystalsData';
 
 const CartContext = React.createContext();
 const initialState = [];
@@ -7,6 +8,8 @@ const initialState = [];
 export function useCart() {
     return useContext(CartContext);
 }
+
+export const collection = crystalData;
 
 export function CartProvider({ children }) {
     const [cartItems, dispatch] = useReducer(cartReducer, initialState);
@@ -22,13 +25,17 @@ export function CartProvider({ children }) {
     const clearCart = (id) => {
         dispatch({ type: ACTIONS.CLEAR, payload: id });
     };
-    const renderItem = (id) => {
-        dispatch({ type: ACTIONS.RENDER, payload: id });
-    };
 
     return (
         <CartContext.Provider
-            value={{ cartItems, addToCart, minusFromCart, removeToCart, clearCart, renderItem }}>
+            value={{
+                cartItems,
+                addToCart,
+                minusFromCart,
+                removeToCart,
+                clearCart,
+                collection,
+            }}>
             {children}
         </CartContext.Provider>
     );
