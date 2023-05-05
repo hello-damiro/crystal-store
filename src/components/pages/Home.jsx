@@ -5,17 +5,17 @@ import { randomNumber, randomBetween } from '../helpers/CommonFunctions';
 import { useCart } from '../hooks/CartContext';
 
 function Home() {
-    const shop = useCart();
+    const collection = useCart().collection;
     const [crystals, setCrystals] = useState([]);
 
     useEffect(() => {
         const getRandomCrystal = () => {
-            const randomIndex = randomNumber(shop.collection.length);
-            return shop.collection[randomIndex];
+            const randomIndex = randomNumber(collection.length);
+            return collection[randomIndex];
         };
         const randomCrystals = [getRandomCrystal(), getRandomCrystal(), getRandomCrystal()];
         setCrystals(randomCrystals);
-    }, []);
+    }, [collection]);
 
     return (
         <section className="home">
@@ -44,9 +44,9 @@ function Home() {
                 </div>
             </div>
             <div className="illustration">
-                {crystals.map((crystal) => (
+                {crystals.map((crystal, index) => (
                     <Crystal
-                        key={crystal.id}
+                        key={index}
                         color={crystal.color}
                         meaning={crystal.meaning.toLowerCase()}
                         width={randomBetween(1, 5) * 10 + 100}
