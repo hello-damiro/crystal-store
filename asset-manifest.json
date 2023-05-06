@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crystal-store/static/css/main.5e20eed7.css",
-    "main.js": "/crystal-store/static/js/main.17024b9c.js",
+    "main.css": "/crystal-store/static/css/main.d8de713c.css",
+    "main.js": "/crystal-store/static/js/main.fcba4b8a.js",
     "static/media/rune-fertility.svg": "/crystal-store/static/media/rune-fertility.b8c8829d91a357a6c839.svg",
     "static/media/odin-logo-colored.svg": "/crystal-store/static/media/odin-logo-colored.825f099aa8d2bc7b394a.svg",
     "static/media/cart.svg": "/crystal-store/static/media/cart.08d0ff77325b40362a2c.svg",
@@ -33,11 +33,11 @@
     "static/media/crystal-shadow.svg": "/crystal-store/static/media/crystal-shadow.fecd84029a9be0c734f1.svg",
     "static/media/add-button.svg": "/crystal-store/static/media/add-button.4102c9becce3b673abfd.svg",
     "static/media/minus-button.svg": "/crystal-store/static/media/minus-button.2973ba957ed0bc50199c.svg",
-    "main.5e20eed7.css.map": "/crystal-store/static/css/main.5e20eed7.css.map",
-    "main.17024b9c.js.map": "/crystal-store/static/js/main.17024b9c.js.map"
+    "main.d8de713c.css.map": "/crystal-store/static/css/main.d8de713c.css.map",
+    "main.fcba4b8a.js.map": "/crystal-store/static/js/main.fcba4b8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e20eed7.css",
-    "static/js/main.17024b9c.js"
+    "static/css/main.d8de713c.css",
+    "static/js/main.fcba4b8a.js"
   ]
 }
