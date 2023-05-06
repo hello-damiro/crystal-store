@@ -38,6 +38,10 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.card .details {
+    width: 100%;
+}
+
 .card .details h2 {
     font-size: 1.4rem;
     font-weight: 700;
@@ -51,6 +55,7 @@
 }
 
 .card .details p {
+    width: 100%;
     text-align: left;
 }
 
@@ -93,6 +98,7 @@
 }
 
 .title-price {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
